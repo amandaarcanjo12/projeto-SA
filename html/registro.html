@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Denúncia — Denúncia Urbana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo" class="logo-img">
+        Denúncia Urbana
+    </div>
+    <nav>
+        <a href="inicio.html">Início</a>
+        <a href="registro.html" class="ativo">Registrar</a>
+        <a href="acompanhamento.html">Acompanhar</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Nova Denúncia</h2>
+    <form id="formDenuncia">
+        <label>Título do Problema</label>
+        <input type="text" id="titulo" placeholder="Ex: Buraco perigoso na Rua X" required>
+
+        <label>Descrição</label>
+        <textarea id="descricao" placeholder="Descreva o problema com detalhes..." required></textarea>
+
+        <label for="local">Local / Bairro</label>
+        <div class="campo-local">
+            <input type="text" id="local" name="local" placeholder="Digite o bairro">
+            <div id="sugestoes-bairros" class="sugestoes"></div>
+        </div>
+
+        <label for="categoria">Categoria</label>
+        <select id="categoria" name="categoria">
+            <option value="">Selecione a categoria</option>
+            <option value="Iluminação pública">Iluminação pública</option>
+            <option value="Buracos na rua">Buracos na rua</option>
+            <option value="Saneamento">Saneamento</option>
+            <option value="Coleta de lixo">Coleta de lixo</option>
+            <option value="Transporte público">Transporte público</option>
+            <option value="Áreas verdes e praças">Áreas verdes e praças</option>
+            <option value="Postes e fiação">Postes e fiação</option>
+            <option value="Calçadas">Calçadas</option>
+            <option value="Animais soltos">Animais soltos</option>
+            <option value="Segurança pública">Segurança pública</option>
+            <option value="Vazamentos de água">Vazamentos de água</option>
+            <option value="Esgoto a céu aberto">Esgoto a céu aberto</option>
+            <option value="Árvores caídas">Árvores caídas</option>
+            <option value="Manutenção urbana">Manutenção urbana</option>
+            <option value="Outros">Outros</option>
+        </select>
+
+        <button class="btn" type="submit">
+            <i class="fa fa-paper-plane" style="margin-right:8px"></i>
+            Enviar Denúncia
+        </button>
+        <p id="msg"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>Quem Somos</h3>
+            <p>Somos uma plataforma criada para facilitar a comunicação entre moradores e os responsáveis pela manutenção da cidade.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Nossa Missão</h3>
+            <p>Promover melhorias reais, ajudando a identificar problemas como falta de iluminação, buracos, e outros riscos urbanos.</p>
+        </div>
+        <div class="footer-box">
+            <h3>Regulamentos</h3>
+            <p>
+                • As denúncias devem ser verídicas.<br>
+                • É proibido expor dados pessoais sem autorização.<br>
+                • O uso indevido pode gerar bloqueio da conta.
+            </p>
+        </div>
+    </div>
+    <p class="copy">© 2025 — Denúncia Urbana. Todos os direitos reservados.</p>
+</footer>
+
+<section class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.460371584678!2d-48.5016694236673!3d-27.54821932005812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527475e01a8efef%3A0x5b0f13adab8483ec!2sSENAI%20Florian%C3%B3polis%20(CTAI)!5e0!3m2!1spt-BR!2sbr!4v1759343546012!5m2!1spt-BR!2sbr"
+    width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+</body>
+</html>

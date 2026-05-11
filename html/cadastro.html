@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro — Denúncia Urbana</title>
+    <link rel="stylesheet" href="login-cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="form-box">
+        <div class="logo-box">
+            <img src="img/logo.png" alt="Logo">
+            <span>Denúncia Urbana</span>
+        </div>
+
+        <h2>Criar Conta</h2>
+        <p class="subtitle">Junte-se à comunidade</p>
+
+        <form id="formCadastro">
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="tel" id="telefone" placeholder="Telefone" pattern="\d{10,11}" required title="Digite apenas números">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="senha" placeholder="Senha (mínimo 6 caracteres)" minlength="6" required>
+            <button type="submit" class="btn">
+                <i class="fa fa-user-plus" style="margin-right:8px"></i>
+                Cadastrar
+            </button>
+        </form>
+
+        <div id="areaAcompanhar" style="display:none; margin-top:10px;">
+            <a href="acompanhamento.html" class="btn" style="background:#0f1f8a;">
+                <i class="fa fa-list" style="margin-right:8px"></i>
+                Acompanhar denúncia
+            </a>
+        </div>
+
+        <p class="links">
+            Já tem conta? <a href="index.html">Entrar</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
